@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column; /* This ensures content is aligned vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px; /* Keep the top margin */
+    width: 300px; /* Width of the grid container */
+    margin-bottom: 20px; /* Increased bottom margin to separate from the verify button */
+    border: 2px solid #007bff; /* Blue border */
+    background-color: #fff; /* White background */
+}
+
+.grid-item {
+    width: 100%;
+    height: 100px; /* Adjusted height */
+    object-fit: cover;
+}
+
+
+#header {
+    width: 300px; /* Matching width with the grid container */
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: px; /* Ensures space between header and grid */
+}
+
+#verify-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Increased top margin for more space */
+    width: 300px; /* Ensures alignment with the grid container */
+}
+
+.verify-text {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    cursor: pointer;
+}
+
